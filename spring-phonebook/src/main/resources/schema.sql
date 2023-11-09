@@ -1,0 +1,8 @@
+-- DROP IF EXISTS `phone_book`;
+-- CREATE TABLE `phone_book` (
+--   `id` int(11) NOT NULL AUTO_INCREMENT,
+--   `first_name` varchar(255) NOT NULL,
+--   `last_name` varchar(255) NOT NULL,
+--   `phone_number` varchar(255) NOT NULL,
+--   PRIMARY KEY (`id`)
+-- ) ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "caaff3a5-6885-4bb1-8c0b-d4397397f333",
+		"name": "PhoneBookSpringboot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5658961"
+	},
+	"item": [
+		{
+			"name": "Add Phonebook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Kate Middleton",
+							"type": "text"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "+254712312312",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/Phonebook/add",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"Phonebook",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Phonebooks Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/PhoneBook/list",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"PhoneBook",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete PhoneBook by name",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "Kate Middleton",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/PhoneBook/deleteByName",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"PhoneBook",
+						"deleteByName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete PhoneBook by Number",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "phoneNumber",
+							"value": "+2547123123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/PhoneBook/deleteByNumber",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"PhoneBook",
+						"deleteByNumber"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
